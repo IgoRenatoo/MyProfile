@@ -1,0 +1,97 @@
+  
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+} 
+
+.root{
+  --bkground: url(./assets/index/blackmood.jpg);
+}
+
+  
+
+body{
+  display: flex;
+  background: var(--bkground) no-repeat top center/cover;
+  height: 100vh;
+}
+
+input {
+  border-radius: 5px;
+}
+  
+
+#container {
+  display: flex;
+  margin: auto;
+  border-radius: 10px;
+  padding: 10px 100px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(43, 43, 43);
+}
+
+#h1 {
+  color: white;
+  display: flex;
+  padding: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#hr {
+  display: flex;
+  flex-direction: column;
+  padding: 2pt;
+  border: solid 2pt black;
+  border-radius: 10px;
+  width: 220px;
+}
+
+#displayhora {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15pt;
+  gap: 10px;
+  border-radius: 20px;
+}
+
+#tempo {
+  color: white;
+  font-family: verdana;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#foto {
+  display: flex;
+  justify-content: center;
+}
+
+#foto img {
+  width: 500px;
+}
+
+footer{
+  color: white;
+  font-size: 18px;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+}
+
+#vlt {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: white;
+}

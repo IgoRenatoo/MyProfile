@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto - Verificador de Idade!</title>
+</head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      background: url(./CSS/assets/index/blackmood.jpg) no-repeat top center/cover;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      display: flex;
+      background-color: rgb(43, 43, 43);
+      border: 2px solid white;
+      border-radius: 20px;
+      padding: 20px;
+      color: white;
+      justify-content: center;
+    }
+
+    section {
+      display: block;
+      margin: 20px;
+      width: 500px;
+      height: 300pt;
+      border-radius: 20pt;
+      color: white;
+      padding: 20px;
+      font-size: 18px;
+      background-color: rgb(43, 43, 43);
+    }
+
+    #container {
+      display: flex;
+      padding: 20px auto;
+      margin: 20px 0px;
+      gap: 10px;
+    }
+
+    div {
+      padding: 40px auto;
+      margin: 1.5px;
+      flex-direction: column;
+    }
+
+    footer{
+      display: flex;
+      flex-direction: column;
+      color: white;
+      font-size: 18px;
+      font-style: italic;
+      display: flex;
+      align-items: center;
+    } 
+
+    #p1 {
+      width: auto;
+      height: auto;
+      font-size: 20px;
+      display: block;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      justify-items: center;
+    }
+
+    #vlt {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      color: white;
+    }
+
+
+  </style>
+
+<body>
+  <section>
+    <h1>
+      Verificador de Idade!
+    </h1>
+
+    <div id="container">
+      <div> 
+        Ano de nascimento: <input type="number" name="nasc" id="nasc">
+      </div>
+  
+      <div>  
+
+        Sexo:  
+        <input type="radio" name="radsex" id="masc" checked>
+        <label for="masc">Masculino</label>
+  
+        <input type="radio" name="radsex" id="femi">
+        <label for="femi">Feminino</label>      </div>
+
+      <div>
+        <input type="button" value="Verificar" onclick="veri()">
+      </div>
+    </div>
+
+    <div id="tela">
+  
+      <footer>
+        <a href="./02-project.html" id="vlt">Voltar!</strong></a>
+
+        <strong> Direitos reservados.</strong>
+
+        <p id="p1">PROJETO EM DESENVOLVIMENTO!</p>
+      </footer> 
+
+    </div>    
+
+  </section>
+
+  <script>
+    function veri(){
+
+      var mas = document.getElementById('masc')
+      var fem = document.getElementById('femi')
+      var tel = document.getElementById('tela')
+      var data = new Date()
+      var ano = data.getFullYear()
+      var nasci = document.getElementById('nasc')
+      var nasc = Number(nasci.value)
+      var idade = (ano - nasc)
+      
+
+      if (nasc > ano || nasc == 0) {
+        tel.innerHTML = ('Hellou Mundo, Projeto incompleto')
+      }else{
+        tel.innerHTML = ('Hello, estamos em testes...')
+      }
+    }
+  </script>
+    
+</body> 
+</html>
