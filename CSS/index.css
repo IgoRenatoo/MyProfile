@@ -97,7 +97,7 @@ ul li a:hover {
   transform: translateY(-10%);
 } Para mudar posicionamente da imagem na tela... */
 #profile img {
-  width: 150px;
+  width: 200px;
 }
 
 #switch {
