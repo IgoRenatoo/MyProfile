@@ -23,7 +23,7 @@
       
     }
     
-    .button-as-link {
+    #bt {
       display: flex;
       background-color: grey;
       justify-content: center;
@@ -34,7 +34,7 @@
       font-size: 18px;
     }
 
-    .button-as-link a {
+    #bt a {
       text-decoration: none;
       color: rgba(0, 255, 255, 0.908);
     }
@@ -65,17 +65,11 @@
 <body>
   <section>
     <div>
-
-      <button class="button-as-link">
-        <a href="./02.1-hora.html" target="_parent">PROJETO HORA</a> <br>
-      </button>
-
-      <button class="button-as-link">
-        <a href="./02.2-idade.html" target="_parent">PROJETO IDADE</a>
-      </button>
+      <a href="./02.1-hora.html" target="_parent"><input type="button" value="PROJETO HORA" id="bt"></a>
+      <a href="./02.2-idade.html" target="_parent"><input type="button" value="PROJETO IDADE" id="bt"></a>
 
       <a href="./index.html"><strong id="vlt">Voltar!</strong></a>
-
+    </div>
     
       <footer>
         <strong> Direitos reservados.</strong>
