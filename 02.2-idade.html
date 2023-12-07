@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="root">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatibility" content="IE-edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projeto - Verificador de Idade!</title>
+ 
 </head>
   <style>
+
+    .root {
+      --bkground: url(./CSS/assets/index/blackmood.jpg);
+      --border-color: white;
+      --text-color: rgba(0, 255, 255, 0.908);
+      --background-color: rgba(255, 255, 255, 0.10);
+      --background-color-hover: rgba(255, 255, 255, 0.50);
+      --switch-filter: url(./assets/index/sun.svg);
+}
+
     * {
       margin: 0px;
       padding: 0px;
@@ -13,32 +28,32 @@
     }
 
     body {
-      display: flex;
-      background: url(./CSS/assets/index/blackmood.jpg) no-repeat top center/cover;
-      justify-content: center;
+      background: var(--bkground) no-repeat top center/cover;
       height: 100vh;
+      flex-direction: column;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      margin: 20px auto;
+      width: 400px;
+      border: 1pt solid var(--border-color);
+      border-radius: 10pt;
+      color: var(--text-color);
+      padding: 20px;
+      font-size: 18px;
+      background-color: rgb(43, 43, 43);
     }
 
     h1 {
       display: flex;
       background-color: rgb(43, 43, 43);
-      border: 2px solid white;
+      border: 2px solid var(--border-color);
       border-radius: 20px;
       padding: 20px;
-      color: white;
+      color: var(--text-color);
       justify-content: center;
-    }
-
-    section {
-      display: block;
-      margin: 20px;
-      width: 500px;
-      height: 300pt;
-      border-radius: 20pt;
-      color: white;
-      padding: 20px;
-      font-size: 18px;
-      background-color: rgb(43, 43, 43);
     }
 
     #container {
@@ -54,32 +69,37 @@
       flex-direction: column;
     }
 
+    #tela {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    #tela img {
+      width: 150px;
+      height: 150px;
+    }
+
     footer{
       display: flex;
       flex-direction: column;
-      color: white;
+      color: var(--text-color);
       font-size: 18px;
+      gap: 10px;
       font-style: italic;
-      display: flex;
       align-items: center;
+      justify-content: center;
     } 
 
-    #p1 {
-      width: auto;
-      height: auto;
-      font-size: 20px;
-      display: block;
-      align-items: center;
-      align-content: center;
-      justify-content: center;
-      justify-items: center;
-    }
-
     #vlt {
-      display: flex;
-      justify-content: center;
       padding: 10px;
-      color: white;
+      border-radius: 10px;
+      border: 2px solid var(--border-color);
+      color: var(--text-color);
+      text-decoration: none;
+      background: rgb(43, 43, 43);
+
     }
 
 
@@ -88,7 +108,7 @@
 <body>
   <section>
     <h1>
-      Verificador de Idade!
+      Calculadora de idade!
     </h1>
 
     <div id="container">
@@ -108,19 +128,15 @@
       <div>
         <input type="button" value="Verificar" onclick="veri()">
       </div>
+
+      <div id="tela">
+        Aí zé da manga!
+      </div> 
     </div>
 
-    <div id="tela">
-  
-      <footer>
-        <a href="./02-project.html" id="vlt">Voltar!</strong></a>
+   
 
-        <strong> Direitos reservados.</strong>
-
-        <p id="p1">PROJETO EM DESENVOLVIMENTO!</p>
-      </footer> 
-
-    </div>    
+    
 
   </section>
 
@@ -137,13 +153,30 @@
       var idade = (ano - nasc)
       
 
-      if (nasc > ano || nasc == 0) {
-        tel.innerHTML = ('Hellou Mundo, Projeto incompleto')
-      }else{
-        tel.innerHTML = ('Hello, estamos em testes...')
+      if (nasc < ano && idade < 12) {
+        tel.innerHTML = '<img src="./CSS/assets/idade/criança-masc.png" alt="">' + ('A criança tem ' + idade + ' anos! ')
+      }
+      if (nasc < ano && idade < 18) {
+        tel.innerHTML = '<img src="./CSS/assets/idade/criança-fem.png" alt="">' + ('O jovem tem ' + idade + ' anos! ')
+      }
+      if (nasc < ano && idade < 39) {
+        tel.innerHTML = '<img src="./CSS/assets/idade/adulto-masc.png" alt="">' + ('O adulto tem ' + idade + ' anos! ')
+      }
+      if (nasc < ano && idade >= 40) {
+        tel.innerHTML = '<img src="./CSS/assets/idade/idoso-masc.png" alt="">' + ('O idoso tem ' + idade + ' anos! ')
       }
     }
   </script>
+
+
     
-</body> 
+</body>
+
+<footer>
+  <a id="vlt" href="./02-project.html">Voltar!</a>
+
+  <strong> Direitos reservados.</strong>
+
+</footer> 
+
 </html>

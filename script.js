@@ -36,20 +36,26 @@ function time(){
   var tm = document.getElementById('tempo')
   var ft = document.getElementById('foto')
   var hras1 = document.getElementById('hra')
-  hras1.innerHTML = ('Agora são ' + hr2 + ' horas!')
+
 
   if (hr2 >= 0 && hr2 <= 12) {
     tm.innerHTML = ('Olá, muito bom dia!')
     ft.src = "./css/assets/data/dia.png"
+    hras1.innerHTML = ('Agora são ' + hr2 + ' horas!')
   }
 
   if (hr2 > 12 && hr2 < 18){
     tm.innerHTML = ('Olá, muito boa tarde!')
     ft.src = "./css/assets/data/tarde.png"
-  }
+    hras1.innerHTML = ('Agora são ' + hr2 + ' horas!')
+  } 
 
   if (hr2 >= 18 && hr2 < 23.59){
     tm.innerHTML = ('Olá, muito boa noite!')
-    ft.src = "./css/assets/data/noite.png"  
+    ft.src = "./css/assets/data/noite.png"
+    hras1.innerHTML = ('Agora são ' + hr2 + ' horas!')
+  }
+  if (hr2 > 24 || hr2 == null ) {
+      hras1.innerHTML = 'Esse horário não existe!'
   }
 }

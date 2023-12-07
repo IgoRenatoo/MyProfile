@@ -5,11 +5,14 @@
   box-sizing: border-box;
 } 
 
-.root{
+.root {
   --bkground: url(./assets/index/blackmood.jpg);
+  --border-color: white;
+  --text-color: rgba(0, 255, 255, 0.908);
+  --background-color: rgba(255, 255, 255, 0.10);
+  --background-color-hover: rgba(255, 255, 255, 0.50);
+  --switch-filter: url(./assets/index/sun.svg);
 }
-
-  
 
 body{
   display: flex;
@@ -34,7 +37,7 @@ input {
 }
 
 #h1 {
-  color: white;
+  color: var(--text-color);
   display: flex;
   padding: auto;
   align-items: center;
@@ -53,7 +56,7 @@ input {
 
 #displayhora {
   display: flex;
-  color: white;
+  color: var(--text-color);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -63,7 +66,7 @@ input {
 }
 
 #tempo {
-  color: white;
+  color: var(--text-color);
   font-family: verdana;
   font-size: 18px;
   display: flex;
@@ -82,7 +85,7 @@ input {
 }
 
 footer{
-  color: white;
+  color: var(--text-color);
   font-size: 18px;
   font-style: italic;
   display: flex;
@@ -92,6 +95,15 @@ footer{
 #vlt {
   display: flex;
   justify-content: center;
-  padding: 10px;
-  color: white;
+  margin: 10px auto;
+  padding: 8px;
+  font-size: 15px;
+  background: var(--background-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  text-decoration: none;
+}
+
+#vlt:hover {
+  background: var(--background-color-hover);
 }

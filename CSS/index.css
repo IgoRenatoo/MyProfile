@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-:root {
-  --bkground: url(./assets/index/blackmood-mobile.jpg);
+.root {
+  --bkground: url(./assets/index/blackmood.jpg);
   --border-color: white;
   --text-color: rgba(0, 255, 255, 0.908);
   --background-color: rgba(255, 255, 255, 0.10);
@@ -124,7 +124,7 @@ ul li a:hover {
 }
 
 #switch button:hover {
-  outline: 8px solid var(--background-color-hover)
+  outline: 8px solid var(--background-color-hover);
 }
 
 .light #switch button {
