@@ -23,6 +23,8 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   /*background-image: url(./assets/assets/bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -30,7 +32,7 @@ body {
 
   Sequência background -> color, image, repeat, position, size.*/
   background: var(--bkground) no-repeat top center/cover;
-  height: 100vh;
+/*   height: 100vh; */
 }
 
 body * {
@@ -38,7 +40,7 @@ body * {
   color: var(--text-color);
 }
 
-ul {
+#configButton {
   list-style: none;
   display: flex;
   gap: 20px;
@@ -46,7 +48,7 @@ ul {
   flex-direction: column;
 }
 
-ul li a {
+#configColorButton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,10 +67,40 @@ ul li a {
   transition: background 0.2s;
 }
 
-ul li a:hover {
+#configColorButton:hover {
   background: var(--background-color-hover);
-  border: 1.8px solid var(--border-color);
-  padding: 22px;
+  border: 1.5px solid var(--border-color);
+  padding: 25px;
+}
+
+#configColorButtonFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  flex-shrink: 0px;
+
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: background 0.2s;
+}
+
+#configColorButtonFooter:hover {
+  background: var(--background-color-hover);
+  border: 1.5px solid var(--border-color);
+  padding: 11px;
+}
+
+#shrink {
+  flex-shrink: 0px;
 }
 
 #container {
@@ -91,6 +123,7 @@ ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 /* div img {
   margin: 10px;
@@ -165,10 +198,14 @@ ul li a:hover {
 }
 
 footer {
+
   display: flex;
-  margin: 10px auto 0px;
-  align-content: center;
+  color: var(--text-color);
+  font-size: 16px;
+  flex-shrink: 0px;
   justify-content: center;
+  padding: 5px;;
+
 }
 
 @media (min-width: 700px) {
