@@ -40,10 +40,18 @@ body * {
   color: var(--text-color);
 }
 
-#text {
+.certificationList {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+}
 
-  align-content: space-around; 
-  background-color: red;
+.certificationList img {
+  width: 200px;
+}
+
+.certificationList img:hover {
+  width: 500px
 }
 
 #configButton {
