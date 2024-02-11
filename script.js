@@ -1,4 +1,4 @@
-//Start DarkMode
+// Start DarkMode //
 function toggleMode() {
   const html = document.body;
   html.classList.toggle("light");
@@ -20,9 +20,10 @@ console.log(getMode);
 if (getMode === "light") {
   document.body.classList = "light";
 }
-//End DarkMode
+// End DarkMode //
 
-function load() {
+// Start Projeto Hora //
+function timeAuto() {
   var hra1 = document.getElementById("hra");
   var data = new Date();
   var hrg = data.getHours();
@@ -45,7 +46,7 @@ function load() {
   }
 }
 
-function time() {
+function timeInformed() {
   var hr1 = document.getElementById("hr");
   var hr2 = Number(hr1.value);
   var tm = document.getElementById("tempo");
@@ -73,3 +74,4 @@ function time() {
     hras1.innerHTML = "Esse horário não existe!";
   }
 }
+// End Projeto Hora //

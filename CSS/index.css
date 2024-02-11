@@ -25,19 +25,25 @@
 body {
   display: flex;
   flex-direction: column;
+  background: var(--bkground) no-repeat top center/cover;
+  height: 100vh;
   /*background-image: url(./assets/assets/bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
 
   Sequência background -> color, image, repeat, position, size.*/
-  background: var(--bkground) no-repeat top center/cover;
-  height: 100vh;
 }
 
 body * {
   font-family: 'Inter', sans-serif;
   color: var(--text-color);
+}
+
+#text {
+
+  align-content: space-around; 
+  background-color: red;
 }
 
 #configButton {
@@ -99,10 +105,6 @@ body * {
   padding: 11px;
 }
 
-#shrink {
-  flex-shrink: 0px;
-}
-
 #container {
   width: 100%;
   max-width: 588px;
@@ -123,12 +125,8 @@ body * {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
-/* div img {
-  margin: 10px;
-  transform: translateY(-10%);
-} Para mudar posicionamente da imagem na tela... */
+
 #profile img {
   width: 200px;
 }
@@ -152,7 +150,7 @@ body * {
   position: absolute;
   z-index: 1;
   left: 0;
-  transform: translateY(-10%);
+  transform: translateY(-10%);/* Para mudar posicionamente da imagem na tela... */
   animation: slide-back 1s;
 }
 
@@ -162,7 +160,6 @@ body * {
 
 .light #switch button {
   animation: slide-in 1s forwards;
-  
 }
 
 #switch span {
@@ -198,15 +195,12 @@ body * {
 }
 
 footer {
-
-  display: flex;
+  margin: auto;
   color: var(--text-color);
-  font-size: 16px;
-  flex-shrink: 0px;
-  justify-content: center;
-  padding: 5px;;
-
+  font-size: 12px;
+  flex-shrink: 0;
 }
+
 
 @media (min-width: 700px) {
   
