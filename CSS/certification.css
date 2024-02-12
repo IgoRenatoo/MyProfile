@@ -1,0 +1,89 @@
+
+.containerCertification {
+  display: flex;
+  flex-direction: column;
+  margin: 15px auto 0px;
+  align-items: center;
+  gap: 20px;
+}
+
+.courses {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.configButtonCertification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 55px;
+
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  transition: background 0.2s;
+}
+
+.configButtonCertification:hover {
+  background: var(--background-color-hover);
+  border: 1.5px solid var(--border-color);
+  padding: 20px 55px;
+}
+
+.listCertification {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+.listCertification img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  border-radius: 4px;
+}
+.listCertification img:hover {
+  width: 400px;
+}
+
+.windowModal {
+  position: relative;
+  display: none;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.windowModal.open {
+ display: flex; 
+}
+.modal{
+  background-color: var(--background-color-hover);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  border-radius: 8px;
+}
+.closed{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 20px;
+  height: 20px;
+  border: 0.2px solid black;
+  background-color: rgba(255, 0, 0, 0.4);
+  color: var(--text-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.closed:hover{
+  background-color: var(--background-color-hover);
+}

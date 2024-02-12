@@ -1,4 +1,10 @@
+//-------------------------------------------------
 // Start DarkMode //
+const getMode = JSON.parse(localStorage.getItem("PageTheme"));
+console.log(getMode);
+if (getMode === "light") {
+  document.body.classList = "light";
+}
 function toggleMode() {
   const html = document.body;
   html.classList.toggle("light");
@@ -13,15 +19,7 @@ function toggleMode() {
 
   localStorage.setItem("PageTheme", JSON.stringify(mode));
 }
-
-const getMode = JSON.parse(localStorage.getItem("PageTheme"));
-console.log(getMode);
-
-if (getMode === "light") {
-  document.body.classList = "light";
-}
-// End DarkMode //
-
+//-------------------------------------------------
 // Start Projeto Hora //
 function timeAuto() {
   var hra1 = document.getElementById("hra");
@@ -45,7 +43,6 @@ function timeAuto() {
     af.src = "./css/assets/data/noite.png";
   }
 }
-
 function timeInformed() {
   var hr1 = document.getElementById("hr");
   var hr2 = Number(hr1.value);
@@ -74,4 +71,27 @@ function timeInformed() {
     hras1.innerHTML = "Esse horário não existe!";
   }
 }
-// End Projeto Hora //
+
+//-------------------------------------------------
+// Start Modal Mechanics
+function mechanicModal() {
+  const modal = document.getElementById("mechanicModal");
+  modal.classList.add("open");
+
+  modal.addEventListener("click", (e) => {
+    if (e.target.id == "closed" || e.target.id == "windowMechanic") {
+      modal.classList.remove("open");
+    }
+  });
+}
+function edificationModal() {
+  const modal = document.getElementById("edificationModal");
+  modal.classList.add("open");
+
+  modal.addEventListener("click", (e) => {
+    if (e.target.id == "closed" || e.target.id == "windowEdification") {
+      modal.classList.remove("open");
+    }
+  });
+}
+

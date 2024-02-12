@@ -9,25 +9,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contacts</title>
   <link rel="stylesheet" href="./CSS/index.css">
+  <link rel="stylesheet" href="./CSS/certification.css">
 
 </head>
 
 
 <body>
-  <section id="container">
+  <section class="containerCertification">
     <h1>Meus Certificados</h1>
-    <ul >
-      <li class="certificationList">
-        <div >
-          <img src="./CSS/certification/Lean Manufacturing - Igor Oliveira Front.jpg" alt="">
-          <img src="./CSS/certification/Lean Manufacturing - Igor Oliveira Back.jpg" alt="">
-        </div>  
-        <div >
-          <img src="./CSS/certification/Lean Manufacturing - Igor Oliveira Front.jpg" alt="">
-          <img src="./CSS/certification/Lean Manufacturing - Igor Oliveira Back.jpg" alt="">
-        </div>  
-      </li>
-    </ul>
+    <h2>
+      Cursos Técnicos
+    </h2>
+    <main class="courses">
+      <div class="listCertification">
+        <button onclick="mechanicModal()" class="configButtonCertification">Técnico Mecânico</button>
+        <div class="windowModal" id="mechanicModal">
+          <div class="modal">
+            <button class="closed" id="closed">X</button>
+            <img src="./CSS/certification/Técnico Mecânica - SENAIES.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="listCertification">
+        <button onclick="edificationModal()" class="configButtonCertification">Técnico Edificações</button>
+        <div class="windowModal" id="edificationModal">
+          <div class="modal">
+            <button class="closed" id="closed">X</button>
+            <img src="./CSS/certification/Técnico Edificação - CEDTEC.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </main>
+
 
   </section>
 
