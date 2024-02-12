@@ -94,4 +94,24 @@ function edificationModal() {
     }
   });
 }
+function leanModal() {
+  const modal = document.getElementById("leanModal");
+  modal.classList.add("open");
+
+  modal.addEventListener("click", (e) => {
+    if (e.target.id == "closed" || e.target.id == "windowLean") {
+      modal.classList.remove("open");
+    }
+  });
+}
+function programmingFundamentsModal() {
+  const modal = document.getElementById("programmingFundamentsModal");
+  modal.classList.add("open");
+
+  modal.addEventListener("click", (e) => {
+    if (e.target.id == "closed" || e.target.id == "windowProgrammingFundaments") {
+      modal.classList.remove("open");
+    }
+  });
+}
 
