@@ -94,6 +94,16 @@ function edificationModal() {
     }
   });
 }
+function scrumFundamentsModal() {
+  const modal = document.getElementById("scrumFundamentsModal");
+  modal.classList.add("open");
+
+  modal.addEventListener("click", (e) => {
+    if (e.target.id == "closed" || e.target.id == "windowScrumFundaments") {
+      modal.classList.remove("open");
+    }
+  });
+}
 function leanModal() {
   const modal = document.getElementById("leanModal");
   modal.classList.add("open");
@@ -109,9 +119,11 @@ function programmingFundamentsModal() {
   modal.classList.add("open");
 
   modal.addEventListener("click", (e) => {
-    if (e.target.id == "closed" || e.target.id == "windowProgrammingFundaments") {
+    if (
+      e.target.id == "closed" ||
+      e.target.id == "windowProgrammingFundaments"
+    ) {
       modal.classList.remove("open");
     }
   });
 }
-
