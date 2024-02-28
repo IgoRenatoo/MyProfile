@@ -35,7 +35,7 @@ body {
 }
 .container {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   margin: 15px auto 0px;
   text-align: center;
   justify-content: center;
@@ -142,6 +142,7 @@ body {
 footer {
   justify-content: center;
   margin: auto;
+  padding: 30px;
   color: var(--text-color);
   font-size: 12px;
   flex-shrink: 0;

@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="dark">
-<head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatibility" content="IE-edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Certificações</title>
-  <link rel="stylesheet" href="./CSS/index.css">
-  <link rel="stylesheet" href="./CSS/certification.css">
-</head>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatibility" content="IE-edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Certifications</title>
+  
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Fonte Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/certification.css">
+  
+  </head>  
 <body>
   <section class="containerCertification">
 
@@ -15,21 +27,21 @@
     <h2> Cursos Técnicos </h2>
 
     <main class="mainCourses">
-      <div class="listCertification">
+      <div class="courseCertification">
         <button onclick="mechanicModal()" class="configButtonCertification">Técnico Mecânico</button>
-        <div class="windowModal" id="mechanicModal">
-          <div class="modal">
-            <button class="closed" id="closed">X</button>
+        <div class="modal" id="mechanicModal">
+          <div class="windowModal">
+            <button class="closedModal" id="closed">X</button>
             <img src="./CSS/certification/Técnico Mecânica - SENAIES.jpeg" alt="">
           </div>
         </div>
       </div>
 
-      <div class="listCertification">
+      <div class="courseCertification">
         <button onclick="edificationModal()" class="configButtonCertification">Técnico Edificações</button>
-        <div class="windowModal" id="edificationModal">
-          <div class="modal">
-            <button class="closed" id="closed">X</button>
+        <div class="modal" id="edificationModal">
+          <div class="windowModal">
+            <button class="closedModal" id="closed">X</button>
             <img src="./CSS/certification/Técnico Edificação - CEDTEC.jpg" alt="">
           </div>
         </div>
@@ -39,44 +51,44 @@
     <h2> Cursos Complementares </h2>
 
     <main class="mainCourses">
-      <div class="listCertification">
+      <div class="courseCertification">
         <button onclick="scrumFundamentsModal()" class="configButtonCertification">Scrum Fundaments</button>
-        <div class="windowModal" id="scrumFundamentsModal">
-          <div class="modal">
-            <button class="closed" id="closed">X</button>
+        <div class="modal" id="scrumFundamentsModal">
+          <div class="windowModal">
+            <button class="closedModal" id="closed">X</button>
             <img src="./CSS/certification/Scrum Fundaments - ScrumStudy.jpg" alt="">
-            </div>
+          </div>
+        </div>
+      </div>      
+    
+      <div class="courseCertification">
+        <button onclick="leanModal()" class="configButtonCertification">Lean Manufacturing</button>
+        <div class="modal" id="leanModal">
+          <div class="windowModal">
+            <button class="closedModal" id="closed">X</button>
+            <img src="./CSS/certification/Lean Manufacturing - RL Associados Front.jpg" alt="">
+          </div>
         </div>
       </div>
       
-    <main class="mainCourses">
-      <div class="listCertification">
-        <button onclick="leanModal()" class="configButtonCertification">Lean Manufacturing</button>
-        <div class="windowModal" id="leanModal">
-          <div class="modal">
-            <button class="closed" id="closed">X</button>
-            <img src="./CSS/certification/Lean Manufacturing - RL Associados Front.jpg" alt="">
-            </div>
-        </div>
-      </div>
-
-      <main class="mainCourses">
-        <div class="listCertification">
+      <div class="courseCertification">
+        <div>
           <button onclick="programmingFundamentsModal()" class="configButtonCertification">Programming Fundaments</button>
-          <div class="windowModal" id="programmingFundamentsModal">
-            <div class="modal">
-              <button class="closed" id="closed">X</button>
-              <img src="./CSS/certification/Fundamentos Programação - Rocketseat.jpeg" alt="">
-              </div>
+        </div>
+        <div class="modal" id="programmingFundamentsModal">
+          <div class="windowModal">
+            <button class="closedModal" id="closed">X</button>
+            <img src="./CSS/certification/Fundamentos Programação - Rocketseat.jpeg" alt="">
           </div>
         </div>
+      </div>
     </main>
-
+    
+    <footer style="padding-top: 100%;">
+      <a class="configColorButtonFooter" href="./index.html">Menu Principal</a>
+    </footer>
   </section>
 
-  <footer>
-    <a class="configColorButtonFooter" href="./index.html">Menu Principal</a>
-  </footer>
 
   <script src="./JS/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
