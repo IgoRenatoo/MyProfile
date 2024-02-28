@@ -1,5 +1,4 @@
-//-------------------------------------------------
-// Start DarkMode //
+//Start DarkMode -------------------------------------------------
 const getMode = JSON.parse(localStorage.getItem("PageTheme"));
 console.log(getMode);
 if (getMode === "light") {
@@ -19,8 +18,7 @@ function toggleMode() {
 
   localStorage.setItem("PageTheme", JSON.stringify(mode));
 }
-//-------------------------------------------------
-// Start Projeto Hora //
+// Start Projetos -------------------------------------------------
 function timeAuto() {
   var hra1 = document.getElementById("hra");
   var data = new Date();
@@ -72,8 +70,8 @@ function timeInformed() {
   }
 }
 
-//-------------------------------------------------
-// Start Modal Mechanics
+//Start Modal Mechanics - Cursos --------------------------------
+//
 function mechanicModal() {
   const modal = document.getElementById("mechanicModal");
   modal.classList.add("open");
@@ -127,3 +125,29 @@ function programmingFundamentsModal() {
     }
   });
 }
+
+//Start Pokedex ------------------------------------------------
+
+function convertPokemonToLi(pokemon) {
+  return `
+  <li>
+  <span class="number">#001</span>
+  <span class="name">${pokemon.name}</span>
+  <div class="status">
+    <ol>
+      <li>
+        Grass
+      </li>
+      <li>
+        Poison
+      </li>
+    </ol>
+    <img src=""https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.name}.png" alt="${pokemon.name}">
+  </div>
+</li>`;
+}
+const pokemonFigure = document.getElementById("pokemonFigure");
+
+pokeApi.getPokemons().then((pokemons) => {
+  pokemonFigure.innerHTML = pokemons.map(convertPokemonToLi).join("");
+});

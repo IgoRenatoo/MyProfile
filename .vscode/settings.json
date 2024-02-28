@@ -15,5 +15,7 @@
       "addWords": true,
       "scope": "workspace"
     }
-  }
+  },
+  "editor.minimap.maxColumn": 80,
+  
 }

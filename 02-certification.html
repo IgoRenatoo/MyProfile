@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="dark">
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <meta charset="UTF-8"/>
   <meta http-equiv="X-UA-Compatibility" content="IE-edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contacts</title>
+  <title>Certificações</title>
   <link rel="stylesheet" href="./CSS/index.css">
   <link rel="stylesheet" href="./CSS/certification.css">
-
 </head>
-
-
 <body>
   <section class="containerCertification">
 
     <h1> Meus Certificados </h1>
-
     <h2> Cursos Técnicos </h2>
 
-    <main class="courses">
+    <main class="mainCourses">
       <div class="listCertification">
         <button onclick="mechanicModal()" class="configButtonCertification">Técnico Mecânico</button>
         <div class="windowModal" id="mechanicModal">
@@ -45,7 +38,7 @@
 
     <h2> Cursos Complementares </h2>
 
-    <main class="courses">
+    <main class="mainCourses">
       <div class="listCertification">
         <button onclick="scrumFundamentsModal()" class="configButtonCertification">Scrum Fundaments</button>
         <div class="windowModal" id="scrumFundamentsModal">
@@ -56,7 +49,7 @@
         </div>
       </div>
       
-    <main class="courses">
+    <main class="mainCourses">
       <div class="listCertification">
         <button onclick="leanModal()" class="configButtonCertification">Lean Manufacturing</button>
         <div class="windowModal" id="leanModal">
@@ -67,7 +60,7 @@
         </div>
       </div>
 
-      <main class="courses">
+      <main class="mainCourses">
         <div class="listCertification">
           <button onclick="programmingFundamentsModal()" class="configButtonCertification">Programming Fundaments</button>
           <div class="windowModal" id="programmingFundamentsModal">
@@ -77,19 +70,15 @@
               </div>
           </div>
         </div>
-
-
-
     </main>
-
 
   </section>
 
   <footer>
-    <a id="configColorButtonFooter" href="./index.html">Menu Principal</a>
+    <a class="configColorButtonFooter" href="./index.html">Menu Principal</a>
   </footer>
 
-  <script src="./script.js"></script>
+  <script src="./JS/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 

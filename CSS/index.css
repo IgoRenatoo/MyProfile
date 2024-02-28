@@ -2,6 +2,20 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--bkground) no-repeat top center/cover;
+  height: 100vh;
+  /*background-image: url(./assets/assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  Sequência background -> color, image, repeat, position, size.*/
 }
 .dark {
   --bkground: url(./assets/index/blackmood.jpg);
@@ -19,46 +33,27 @@
   --background-color-hover: rgb(128, 128, 128, 0.70);
   --switch-filter: url(./assets/index/moon.svg);
 }
-body {
-  display: flex;
-  flex-direction: column;
-  background: var(--bkground) no-repeat top center/cover;
-  height: 100vh;
-  /*background-image: url(./assets/assets/bg-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-
-  Sequência background -> color, image, repeat, position, size.*/
-}
-body * {
-  font-family: 'Inter', sans-serif;
-  color: var(--text-color);
-}
-
-
-#container {
+.container {
   width: 100%;
-  max-width: 588px;
+  max-width: 500px;
   margin: 15px auto 0px;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
-
-#name {
-  display: flex;
-  font-size: 18.5px;
-  justify-content: center;
-  padding: 5px;
-}
-#profile {
+.profile {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#profile img {
+.profile img {
   width: 200px;
+}
+.userName {
+  display: flex;
+  font-size: 18.5px;
+  justify-content: center;
+  padding: 5px;
 }
 #switch {
   height: 24px;
@@ -78,16 +73,13 @@ body * {
   position: absolute;
   z-index: 1;
   left: 0;
-  transform: translateY(-10%);/* Para mudar posicionamente da imagem na tela... */
+  transform: translateY(-11%);/* Para mudar posicionamente da imagem na tela... */
   animation: slide-back 1s;
 }
 #switch button:hover {
   outline: 8px solid var(--background-color-hover);
 }
-.light #switch button {
-  animation: slide-in 1s forwards;
-}
-#switch span {
+#switch span { /* CSS da caixa do slide */
   display: block;
   width: 64px;
   height: 24px;
@@ -96,15 +88,17 @@ body * {
   border-radius: 999px;
   backdrop-filter: blur(4px);
 }
-
-#configButton {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  padding: 12px;
-  flex-direction: column;
+.light #switch button { 
+  animation: slide-in 1s forwards;
 }
-#configColorButton {
+.configButton {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 20px;
+  list-style: none;
+}
+.configColorButton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,12 +116,37 @@ body * {
 
   transition: background 0.2s;
 }
-#configColorButton:hover {
+.configColorButton:hover {
   background: var(--background-color-hover);
   border: 1.5px solid var(--border-color);
   padding: 25px;
 }
-#configColorButtonFooter {
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 40px;
+}
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 50px;
+  transition: --background 0.2s;
+}
+.social-links a:hover {
+  padding: 17px;
+  background-color: var(--background-color-hover);
+}
+footer {
+  justify-content: center;
+  margin: auto;
+  color: var(--text-color);
+  font-size: 12px;
+  flex-shrink: 0;
+}
+footer .configColorButtonFooter {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,35 +165,12 @@ body * {
 
   transition: background 0.2s;
 }
-#configColorButtonFooter:hover {
+footer .configColorButtonFooter:hover {
   background: var(--background-color-hover);
   border: 1.5px solid var(--border-color);
   padding: 11px;
 }
-#social-links {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  font-size: 40px;
-}
-#social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-  border-radius: 50px;
-  transition: --background 0.2s;
-}
-#social-links a:hover {
-  padding: 17px;
-  background-color: var(--background-color-hover);
-}
-footer {
-  margin: auto;
-  color: var(--text-color);
-  font-size: 12px;
-  flex-shrink: 0;
-}
+
 @media (min-width: 700px) {
   
   :root {

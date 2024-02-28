@@ -2,12 +2,16 @@
 .containerCertification {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 500px;
   margin: 15px auto 0px;
-  align-items: center;
   gap: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.courses {
+.mainCourses {
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -17,6 +21,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 200px;
+  height: 80px;
   padding: 20px 55px;
 
   background: var(--background-color);
@@ -32,7 +38,7 @@
 .configButtonCertification:hover {
   background: var(--background-color-hover);
   border: 1.5px solid var(--border-color);
-  padding: 20px 55px;
+  
 }
 
 .listCertification {
