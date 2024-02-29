@@ -46,11 +46,9 @@
 .modal {
   display: none;
   background-color: var(--background-color-hover);
-  overflow-y: hidden;
 }
 .modal.open {
   display: flex;
-  overflow: hidden;
   background-color: var(--background-color-hover);
 }
 .windowModal{
@@ -58,13 +56,11 @@
   backdrop-filter: blur(10px);
   padding: 8px;
   border-radius: 8px;
-  overflow-y: hidden;
 }
 .windowModal img {
   align-items: center;
   width: 200px;
   border-radius: 4px;
-  overflow-y: hidden;
 }
 .closedModal{
   position: absolute;
@@ -77,6 +73,8 @@
   color: var(--text-color);
   border-radius: 50%;
   cursor: pointer;
+  z-index: 9999;
+  
 }
 .closedModal:hover{
   background-color: var(--background-color-hover);
