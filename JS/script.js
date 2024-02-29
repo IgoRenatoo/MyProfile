@@ -117,10 +117,7 @@ function programmingFundamentsModal() {
   modal.classList.add("open");
 
   modal.addEventListener("click", (e) => {
-    if (
-      e.target.id == "closed" ||
-      e.target.id == "windowProgrammingFundaments"
-    ) {
+    if (e.target.id == "closed" || e.target.id == "windowProgrammingFundaments") {
       modal.classList.remove("open");
     }
   });

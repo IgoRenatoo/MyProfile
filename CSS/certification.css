@@ -1,7 +1,7 @@
 .containerCertification {
   display: flex;
   flex-direction: column;
-  margin: 15px auto 0px;
+  margin: 0 auto;
   gap: 22px;
   height: 100%;
   text-align: center;
@@ -18,8 +18,8 @@
 .courseCertification {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  gap: 5px;
 }
 .configButtonCertification {
   display: flex;
@@ -44,27 +44,27 @@
   border: 1.5px solid var(--border-color);  
 }
 .modal {
-  position: relative;
   display: none;
-  top: 0;
-  left: 0;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
+  background-color: var(--background-color-hover);
+  overflow-y: hidden;
 }
 .modal.open {
-  display: flex; 
+  display: flex;
+  overflow: hidden;
+  background-color: var(--background-color-hover);
 }
 .windowModal{
   background-color: var(--background-color-hover);
   backdrop-filter: blur(10px);
   padding: 8px;
   border-radius: 8px;
+  overflow-y: hidden;
 }
 .windowModal img {
   align-items: center;
-  width: 300px;
+  width: 200px;
   border-radius: 4px;
+  overflow-y: hidden;
 }
 .closedModal{
   position: absolute;
