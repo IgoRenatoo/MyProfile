@@ -1,21 +1,3 @@
 {
-  "cSpell.words": [
-    "autor",
-    "blackmood",
-    "compronents",
-    "desenvolvimento",
-    "Oliveira",
-    "props",
-    "Voltar"
-  ],
-  "cSpell.customDictionaries": {
-    "custom-dictionary-workspace": {
-      "name": "custom-dictionary-workspace",
-      "path": "${workspaceFolder:MyProfile}/.cspell/custom-dictionary-workspace.txt",
-      "addWords": true,
-      "scope": "workspace"
-    }
-  },
-  "editor.minimap.maxColumn": 80,
-  
+    "liveServer.settings.port": 5501
 }

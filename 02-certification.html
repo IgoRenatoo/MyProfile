@@ -24,65 +24,14 @@
   <section class="containerCertification">
 
     <h1> Meus Certificados </h1>
-    <h2> Cursos Técnicos </h2>
+    <label for="">Selecione o curso desejado</label>
+    <select class="courseSelect" id="">
+      <option value="">---Cursos Técnicos---</option>
+      <option value="">Técnico Mecânica Industrial</option>
+      <option value="">Técnico Edificação</option>
+    </select>
+    <input type="button" value="Imprimir">
 
-    <main class="mainCourses">
-      <div class="courseCertification">
-        <button onclick="mechanicModal()" class="configButtonCertification">Técnico Mecânico</button>
-        <div class="modal" id="mechanicModal">
-          <div class="windowModal">
-            <button class="closedModal" id="closed">X</button>
-            <img src="./CSS/certification/Técnico Mecânica - SENAIES.jpeg" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="courseCertification">
-        <button onclick="edificationModal()" class="configButtonCertification">Técnico Edificações</button>
-        <div class="modal" id="edificationModal">
-          <div class="windowModal">
-            <button class="closedModal" id="closed">X</button>
-            <img src="./CSS/certification/Técnico Edificação - CEDTEC.jpg" alt="">
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <h2> Cursos Complementares </h2>
-
-    <main class="mainCourses">
-      <div class="courseCertification">
-        <button onclick="scrumFundamentsModal()" class="configButtonCertification">Scrum Fundaments</button>
-        <div class="modal" id="scrumFundamentsModal">
-          <div class="windowModal">
-            <button class="closedModal" id="closed">X</button>
-            <img src="./CSS/certification/Scrum Fundaments - ScrumStudy.jpg" alt="">
-          </div>
-        </div>
-      </div>      
-    
-      <div class="courseCertification">
-        <button onclick="leanModal()" class="configButtonCertification">Lean Manufacturing</button>
-        <div class="modal" id="leanModal">
-          <div class="windowModal">
-            <button class="closedModal" id="closed">X</button>
-            <img src="./CSS/certification/Lean Manufacturing - RL Associados Front.jpg" alt="">
-          </div>
-        </div>
-      </div>
-      
-      <div class="courseCertification">
-        <div>
-          <button onclick="programmingFundamentsModal()" class="configButtonCertification">Programming Fundaments</button>
-        </div>
-        <div class="modal" id="programmingFundamentsModal">
-          <div class="windowModal">
-            <button class="closedModal" id="closed">X</button>
-            <img src="./CSS/certification/Fundamentos Programação - Rocketseat.jpeg.jpg" alt="">
-          </div>
-        </div>
-      </div>
-    </main>
     
   </section>
   
