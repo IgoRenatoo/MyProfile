@@ -20,22 +20,30 @@
     <link rel="stylesheet" href="./CSS/certification.css">
   
   </head>  
+
 <body>
   <section class="containerCertification">
-
     <h1> Meus Certificados </h1>
-    <label for="">Selecione o curso desejado</label>
-    <select class="courseSelect" id="">
-      <option value="">---Cursos Técnicos---</option>
-      <option value="">Técnico Mecânica Industrial</option>
-      <option value="">Técnico Edificação</option>
-    </select>
-    <input type="button" value="Imprimir">
+    <main class="mainCertification">
+      <select class="courseSelect" id="courseSelect">
+        <optgroup label="Cursos Técnicos">
+          <option value="0" selected hidden>Selecione uma opção</option>
+          <option value="1">Técnico Mecânica Industrial</option>
+          <option value="2">Técnico Edificações</option>
+        </optgroup>
+        <optgroup label="Cursos Complementares">
+          <option value="3">Fundamentos da Programação</option>
+          <option value="4">Banco de Dados</option>
+          <option value="5">Lean Manufacturing</option>
+          <option value="6">Micro Certification - Welcome ServiceNow</option>
+        </optgroup>
+      </select>
+      <input onclick="printCourse()" class="buttonPrint" type="button" value="Imprimir">
+    </main>
+    <div id="registerCertification"></div>
+    </section>
 
-    
-  </section>
-  
-  <footer>
+  <footer>    
     <a class="configColorButtonFooter" href="./index.html">Menu Principal</a>
   </footer>
 

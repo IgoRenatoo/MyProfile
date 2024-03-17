@@ -6,18 +6,48 @@
   text-align: center;
   align-items: center;
 }
+.mainCertification {
+  display: flex;
+  padding: 5px;
+  gap: 10px;
+}
+
 .courseSelect {
-  color: black;
+  font-size: 1,5rem;
+  color: var(--text-color);
+  width: 22rem;
   border-radius: 8px;
-  background-color: var(--background-color-hover);
+  flex-shrink: 2px;
+  background-color: rgb(128, 128, 128, 0.70);  
 }
-
-
-
-
 .buttonPrint {
-color: red;
-}
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-shrink: 2px;
+  
+    background: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+  
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  
+    text-decoration: none;
+    font-weight: 500;
+  
+    transition: background 0.2s;
+  }
+  .buttonPrint:hover {
+    background: var(--background-color-hover);
+    border: 1.5px solid var(--border-color);
+    padding: 11px;
+  }
+
+  img {
+    height: 500px;
+    width: 800px;
+  }
 @media (min-width: 600px) {
   
   :root {
