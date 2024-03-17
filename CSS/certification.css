@@ -2,10 +2,21 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  gap: 22px;
   height: 100%;
   text-align: center;
   align-items: center;
+}
+.courseSelect {
+  color: black;
+  border-radius: 8px;
+  background-color: var(--background-color-hover);
+}
+
+
+
+
+.buttonPrint {
+color: red;
 }
 @media (min-width: 600px) {
   
