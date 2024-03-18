@@ -17,28 +17,29 @@ function toggleMode() {
   localStorage.setItem("PageTheme", JSON.stringify(mode));
 }
 
-function printCourse(){
+function displayCourse(){
+  //Recebe o curso solicitado, retornando o número do curso desejado
   let course = document.getElementById("courseSelect").value;
+  //Recebe como referência o local aonde vai mandar a img src
   let imgCourse = document.getElementById("registerCertification");
+  //Objeto que contém todos os cursos númerados
   const imagePaths = {
-    '1' : "./CSS/certification/Técnico Mecânica - SENAIES.jpeg",
-    '2' : "./CSS/certification/Técnico Edificações - CEDTEC.jpg",
-    '3' : "./CSS/certification/Fundamentos Programação - Rocketseat.jpeg",
-    '4' : "./CSS/certification/Banco de Dados - B7Web.jpeg",
-    '5' : "./CSS/certification/Scrum Fundaments - ScrumStudy.jpeg",
-    '6' : "./CSS/certification/TLean Manufacturing - RL Associados Front.jpeg",
-    '7' : "./CSS/certification/Micro Certification - Welcome ServiceNow.jpeg",
+    '1' : "./CSS/certification/1 - Técnico Mecânica - SENAIES.jpg",
+    '2' : "./CSS/certification/2 - Técnico Edificações - CEDTEC.jpg",
+    '3' : "./CSS/certification/3 - Fundamentos Programação - Rocketseat.jpg",
+    '4' : "./CSS/certification/4 - Banco de Dados - B7Web.jpg",
+    '5' : "./CSS/certification/5 - Scrum Fundaments - ScrumStudy.jpg",
+    '6' : "./CSS/certification/6 - Lean Manufacturing - RL Associados Front.jpg",
+    '7' : "./CSS/certification/7 - Micro Certification - Welcome ServiceNow.jpg",
   };
-  console.log(course);
-  if (imagePaths.hasOwnProperty(course)) {
     // Cria um elemento <img> e define o atributo src com o caminho da imagem
     let imgElement = document.createElement("img");
     imgElement.src = imagePaths[course];
+    imgElement.classList.add("imgCourse");
 
     // Limpa o conteúdo anterior do elemento
     imgCourse.innerHTML = "";
 
     // Adiciona a imagem ao elemento
     imgCourse.appendChild(imgElement);
-  }
 }

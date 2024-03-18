@@ -5,6 +5,7 @@
   height: 100%;
   text-align: center;
   align-items: center;
+  gap: 10px;
 }
 .mainCertification {
   display: flex;
@@ -13,18 +14,19 @@
 }
 
 .courseSelect {
-  font-size: 1,5rem;
+  font-size: 16px;
   color: var(--text-color);
-  width: 22rem;
+  width: 250px;
   border-radius: 8px;
   flex-shrink: 2px;
   background-color: rgb(128, 128, 128, 0.70);  
 }
-.buttonPrint {
+.displayButton {
     align-items: center;
     justify-content: center;
     padding: 10px;
     flex-shrink: 2px;
+    font-size: 16px;
   
     background: var(--background-color);
     border: 1px solid var(--border-color);
@@ -34,21 +36,22 @@
     -webkit-backdrop-filter: blur(4px);
   
     text-decoration: none;
-    font-weight: 500;
-  
+    
     transition: background 0.2s;
   }
-  .buttonPrint:hover {
+  .displayButton:hover {
     background: var(--background-color-hover);
     border: 1.5px solid var(--border-color);
     padding: 11px;
   }
 
-  img {
+.imgCourse {
     height: 500px;
     width: 800px;
+    border-radius: 8px;
+    outline: 2px solid red;  
   }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   
   :root {
     --bkground: url(./assets/index/blackmood-mobile.jpg)
@@ -56,6 +59,10 @@
 
   .light {
     --bkground: url(./assets/index/lightmood.jpg)
+  }
+
+  .courseSelect {
+    width: 350px;
   }
 }
 @keyframes slide-in {
