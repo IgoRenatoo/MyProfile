@@ -24,13 +24,13 @@ function displayCourse(){
   let imgCourse = document.getElementById("registerCertification");
   //Objeto que contém todos os cursos númerados
   const imagePaths = {
-    '1' : "./CSS/certification/1 - Técnico Mecânica - SENAIES.jpg",
-    '2' : "./CSS/certification/2 - Técnico Edificações - CEDTEC.jpg",
-    '3' : "./CSS/certification/3 - Fundamentos Programação - Rocketseat.jpg",
-    '4' : "./CSS/certification/4 - Banco de Dados - B7Web.jpg",
-    '5' : "./CSS/certification/5 - Scrum Fundaments - ScrumStudy.jpg",
-    '6' : "./CSS/certification/6 - Lean Manufacturing - RL Associados Front.jpg",
-    '7' : "./CSS/certification/7 - Micro Certification - Welcome ServiceNow.jpg",
+    '1' : "./CSS/assets/certification/1 - Técnico Mecânica - SENAIES.jpg",
+    '2' : "./CSS/assets/certification/2 - Técnico Edificações - CEDTEC.jpg",
+    '3' : "./CSS/assets/certification/3 - Fundamentos Programação - Rocketseat.jpg",
+    '4' : "./CSS/assets/certification/4 - Banco de Dados - B7Web.jpg",
+    '5' : "./CSS/assets/certification/5 - Scrum Fundaments - ScrumStudy.jpg",
+    '6' : "./CSS/assets/certification/6 - Lean Manufacturing - RL Associados Front.jpg",
+    '7' : "./CSS/assets/certification/7 - Micro Certification - Welcome ServiceNow.jpg",
   };
     // Cria um elemento <img> e define o atributo src com o caminho da imagem
     let imgElement = document.createElement("img");
