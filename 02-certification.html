@@ -16,15 +16,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/global.css">
     <link rel="stylesheet" href="./CSS/certification.css">  
   </head>  
 
 <body>
-  <section class="containerCertification">
+  <main class="mainContent">
     <h1> Meus Certificados </h1>
-    <main class="mainCertification">
-      <select class="courseSelect" id="courseSelect">
+    <section class="containerCertification">
+      <select class="optionSelect" id="courseSelect">
         <optgroup label="Cursos Técnicos">
           <option value="0" selected hidden>Selecione uma opção</option>
           <option value="1">Técnico Mecânica Industrial</option>
@@ -39,14 +39,14 @@
         </optgroup>
       </select>
 
-      <input onclick="displayCourse()" class="displayButton" type="button" value="Exibir">
-    </main>
+      <input onclick="displayCourse()" class="configButton" type="button" value="Exibir">
+    </section>
 
-    <div id="registerCertification"></div>
-  </section>
+    <div id="displayCertification"></div>
+  </main>
 
   <footer>    
-    <a class="configColorButtonFooter" href="./index.html">Menu Principal</a>
+    <a class="configButtonFooter" href="./index.html">Menu Principal</a>
   </footer>
 </body>
 

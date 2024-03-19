@@ -1,0 +1,29 @@
+.container25in1 {
+  display: flex;
+  padding: 5px;
+  gap: 10px;
+}
+.optionSelect {
+  font-size: 16px;
+  color: var(--text-color);
+  width: 250px;
+  border-radius: 8px;
+  flex-shrink: 2px;
+  background-color: rgb(128, 128, 128, 0.70);  
+}
+@media (min-width: 700px) {  
+  .configButton {
+      padding: 15px;
+  }
+  .configButton:hover {
+      padding: 15px;
+  }  
+}
+@media (max-width: 700px){
+  .configButton {
+    padding: 10px;
+  }
+  .configButton:hover {
+    padding: 10px;
+  } 
+}

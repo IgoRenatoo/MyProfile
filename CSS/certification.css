@@ -1,87 +1,48 @@
 .containerCertification {
   display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  height: 100%;
-  text-align: center;
-  align-items: center;
-  gap: 10px;
-}
-.mainCertification {
-  display: flex;
   padding: 5px;
   gap: 10px;
 }
-
-.courseSelect {
-  font-size: 16px;
-  color: var(--text-color);
+.optionSelect {
   width: 250px;
   border-radius: 8px;
-  flex-shrink: 2px;
+  font-size: 16px;
+  color: var(--text-color);
   background-color: rgb(128, 128, 128, 0.70);  
+  flex-shrink: 2px;
 }
-.displayButton {
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    flex-shrink: 2px;
-    font-size: 16px;
-  
-    background: var(--background-color);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-  
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-  
-    text-decoration: none;
-    
-    transition: background 0.2s;
-  }
-  .displayButton:hover {
-    background: var(--background-color-hover);
-    border: 1.5px solid var(--border-color);
-    padding: 11px;
-  }
-
 .imgCourse {
     height: 280px;
     width: 400px;
     border-radius: 8px;
     outline: 2px solid var(--text-color);  
-  }
-@media (min-width: 780px) {
-  
+}
+@media (min-width: 700px) {  
   :root {
     --bkground: url(./assets/index/blackmood-mobile.jpg)
   }
-
   .light {
     --bkground: url(./assets/index/lightmood.jpg)
   }
-
-  .courseSelect {
+  .optionSelect {
     width: 350px;
   }
   .imgCourse {
     height: 500px;
     width: 800px;
   }
+  .configButton {
+      padding: 15px;
+  }
+  .configButton:hover {
+      padding: 15px;
+  }  
 }
-@keyframes slide-in {
-  from {
-    left:0;
-  }
-  to {
-    left: 50%;
-  }
+@media (max-width: 700px){
+  .configButton {
+    padding: 10px;
 }
-@keyframes slide-back {
-  from {
-    left: 50%;
-  }
-  to {
-    left: 0;
-  }
+.configButton:hover {
+    padding: 10px;
+} 
 }

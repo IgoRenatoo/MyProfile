@@ -8,7 +8,7 @@ function toggleMode() {
   const html = document.body;
   html.classList.toggle("light");
 
-  var mode;
+  let mode;
   if (html.classList.contains("light")) {
     mode = "light";
   } else {
@@ -18,11 +18,11 @@ function toggleMode() {
 }
 
 function displayCourse(){
-  //Recebe o curso solicitado, retornando o número do curso desejado
+  //Armazena o número do curso selecionado.
   let course = document.getElementById("courseSelect").value;
-  //Recebe como referência o local aonde vai mandar a img src
-  let imgCourse = document.getElementById("registerCertification");
-  //Objeto que contém todos os cursos númerados
+  //Recebe como referência o local de destino da img src.
+  let imgCourse = document.getElementById("displayCertification");
+  //Objeto que contém todos os cursos especificados por números.
   const imagePaths = {
     '1' : "./CSS/assets/certification/1 - Técnico Mecânica - SENAIES.jpg",
     '2' : "./CSS/assets/certification/2 - Técnico Edificações - CEDTEC.jpg",
@@ -32,14 +32,16 @@ function displayCourse(){
     '6' : "./CSS/assets/certification/6 - Lean Manufacturing - RL Associados Front.jpg",
     '7' : "./CSS/assets/certification/7 - Micro Certification - Welcome ServiceNow.jpg",
   };
-    // Cria um elemento <img> e define o atributo src com o caminho da imagem
-    let imgElement = document.createElement("img");
-    imgElement.src = imagePaths[course];
-    imgElement.classList.add("imgCourse");
+  // Cria um elemento <img>.
+  let imgElement = document.createElement("img");
+  //Adiciona class ao elemento criado.
+  imgElement.classList.add("imgCourse");
+  //Adiciona img ao elemento criado.
+  imgElement.src = imagePaths[course];
 
-    // Limpa o conteúdo anterior do elemento
-    imgCourse.innerHTML = "";
+  // Limpa o curso anterior selecionado.
+  imgCourse.innerHTML = "";
 
-    // Adiciona a imagem ao elemento
-    imgCourse.appendChild(imgElement);
+  // Adiciona a imagem ao elemento criado.
+  imgCourse.appendChild(imgElement);
 }
