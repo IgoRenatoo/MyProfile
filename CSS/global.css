@@ -66,17 +66,15 @@ body {
     padding: 25px;
 }
 footer {
+    display: flex;
     justify-content: center;
-    margin: auto;
+    justify-items: center;
     padding: 20px;
     color: var(--text-color);
     font-size: 16px;
     flex-shrink: 0;
 }
 footer .configButtonFooter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 10px;
     flex-shrink: 1px;
   
