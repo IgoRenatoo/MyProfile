@@ -73,6 +73,7 @@ footer {
     color: var(--text-color);
     font-size: 16px;
     flex-shrink: 0;
+    transform: translateY(-40%)
 }
 footer .configButtonFooter {
     padding: 10px;
