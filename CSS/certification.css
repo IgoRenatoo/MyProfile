@@ -12,8 +12,8 @@
   flex-shrink: 2px;
 }
 .imgCourse {
-    height: 280px;
-    width: 400px;
+    height: 100%;
+    width: 100%;
     border-radius: 8px;
     outline: 2px solid var(--text-color);  
 }
@@ -27,10 +27,6 @@
   .optionSelect {
     width: 350px;
   }
-  .imgCourse {
-    height: 500px;
-    width: 800px;
-  }
   .configButton {
       padding: 15px;
   }
@@ -41,8 +37,8 @@
 @media (max-width: 700px){
   .configButton {
     padding: 10px;
-}
-.configButton:hover {
+  }
+  .configButton:hover {
     padding: 10px;
-} 
+  } 
 }

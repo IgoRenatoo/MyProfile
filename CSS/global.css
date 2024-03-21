@@ -36,11 +36,11 @@ body {
 .mainContent {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    height: 100%;
-    max-width: 700px;
-    text-align: center;
+    justify-content: center;
     align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 700px;
     gap: 10px;
 }
 .configButton {
@@ -56,8 +56,7 @@ body {
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
   
-    text-decoration: none;
-  
+    text-decoration: none;  
     transition: background 0.2s;
 }
 .configButton:hover {
@@ -67,17 +66,20 @@ body {
 }
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    justify-items: center;
-    padding: 20px;
+    align-items: center;
+    height: 100%;
+    position:relative;
+    padding: 10px;
     color: var(--text-color);
     font-size: 16px;
-    flex-shrink: 0;
-    transform: translateY(-40%)
 }
 footer .configButtonFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
-    flex-shrink: 1px;
   
     background: var(--background-color);
     border: 1px solid var(--border-color);
@@ -86,8 +88,7 @@ footer .configButtonFooter {
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
   
-    text-decoration: none;
-  
+    text-decoration: none;  
     transition: background 0.2s;
 }
 footer .configButtonFooter:hover {
@@ -95,12 +96,10 @@ footer .configButtonFooter:hover {
     border: 1.5px solid var(--border-color);
     padding: 10px;
 }
-@media (min-width: 700px) {
-  
+@media (min-width: 700px) {  
     :root {
       --bkground: url(./assets/index/blackmood-mobile.jpg)
-    }
-  
+    }  
     .light {
       --bkground: url(./assets/index/lightmood.jpg)
     }
