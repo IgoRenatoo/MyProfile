@@ -1,0 +1,99 @@
+.mainIndex {
+  width: 100%;
+  max-width: 600px;
+  margin: 15px auto 0px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile img {
+  width: 200px;
+}
+.userName {
+  display: flex;
+  font-size: 18.5px;
+  justify-content: center;
+  padding: 5px;
+}
+#switch {
+  height: 24px;
+  width: 64px;
+  margin: 5px auto;
+  position: relative;
+}
+#switch button {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-filter) no-repeat center;
+  border: 1px solid var(--border-color);
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  transform: translateY(-11%);/* Para mudar posicionamente da imagem na tela... */
+  animation: slide-back 1s;
+}
+#switch button:hover {
+  outline: 8px solid var(--background-color-hover);
+}
+#switch span { /* CSS da caixa do slide */
+  display: block;
+  width: 64px;
+  height: 24px;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  backdrop-filter: blur(4px);
+}
+.light #switch button { 
+  animation: slide-in 1s forwards;
+}
+.configList {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 20px;
+  list-style: none;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 40px;
+}
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 50px;
+  transition: --background 0.2s;
+}
+.social-links a:hover {
+  padding: 17px;
+  background-color: var(--background-color-hover);
+}
+@keyframes slide-in {
+  from {
+    left:0;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}

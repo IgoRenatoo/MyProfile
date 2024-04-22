@@ -1,0 +1,44 @@
+.containerCertification {
+  display: flex;
+  padding: 5px;
+  gap: 10px;
+}
+.optionSelect {
+  width: 250px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: var(--text-color);
+  background-color: rgb(128, 128, 128, 0.70);  
+  flex-shrink: 2px;
+}
+.imgCourse {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    outline: 2px solid var(--text-color);  
+}
+@media (min-width: 700px) {  
+  :root {
+    --bkground: url(./assets/index/blackmood-mobile.jpg)
+  }
+  .light {
+    --bkground: url(./assets/index/lightmood.jpg)
+  }
+  .optionSelect {
+    width: 350px;
+  }
+  .configButton {
+      padding: 15px;
+  }
+  .configButton:hover {
+      padding: 15px;
+  }  
+}
+@media (max-width: 700px){
+  .configButton {
+    padding: 10px;
+  }
+  .configButton:hover {
+    padding: 10px;
+  } 
+}
