@@ -10,12 +10,6 @@ body {
     flex-direction: column;
     background: var(--bkground) no-repeat top center/cover;
     height: 100vh;
-    /*background-image: url(./assets/assets/bg-mobile.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-  
-    Sequência background -> color, image, repeat, position, size.*/
 }
 .dark {
     --bkground: url(./assets/index/blackmood.jpg);
