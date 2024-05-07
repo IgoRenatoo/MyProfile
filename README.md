@@ -1,9 +1,9 @@
-<h1 align="center"> My Space </h1>
+<h1 align="center"> My Profile </h1>
 
 <br>
 
 <p align="center">
-  <img alt="My Space" src="./CSS/github/preview.jpg" width="50%">
+  <img alt="My Profile" src="./CSS/github/preview.jpg" width="50%">
 </p>
 
 ## 🚀 Tecnologias
@@ -17,9 +17,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O MySpace é usado como cartão de visitas online.
+O MyProfile é usado como cartão de visitas online.
 
-- [Acesse o projeto finalizado, online] <a href="https://igorenatoo.github.io/MySpace/" target="_blank">Link - MySpace</a>
+- [Acesse o projeto finalizado, online] <a href="https://igorenatoo.github.io/MyProfile/" target="_blank">Link - MyProfile</a>
 
 ## 🔖 Layout
 
