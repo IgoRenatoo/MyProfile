@@ -2,61 +2,30 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: "Playwrite DK Uloopet",'Inter', sans-serif;
     color: var(--text-color);
 }
-body {
+html, body {
     display: flex;
     flex-direction: column;
     background: var(--bkground) no-repeat top center/cover;
-    height: 100vh;
+    height: 100%;
 }
 .dark {
-    --bkground: url(./assets/index/blackmood.jpg);
+    --bkground: url(./assets/image/index/blackmood.jpg);
     --border-color: white;
     --text-color: rgba(0, 255, 255, 0.908);
     --background-color: rgba(255, 255, 255, 0.10);
     --background-color-hover: rgba(255, 255, 255, 0.50);
-    --switch-filter: url(./assets/index/sun.svg);
+    --switch-filter: url(./assets/image/index/sun.svg);
 }
 .light {
-    --bkground: url(./assets/index/lightmood-mobile.jpg);
+    --bkground: url(./assets/image/index/lightmood-mobile.jpg);
     --border-color: black;
     --text-color: black;
     --background-color: rgba(255, 255, 255, 0.10);
     --background-color-hover: rgb(128, 128, 128, 0.70);
-    --switch-filter: url(./assets/index/moon.svg);
-}
-.mainContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin: 0 auto;
-    max-width: 700px;
-    gap: 10px;
-}
-.configButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 25px;
-  
-    background: var(--background-color);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-  
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-  
-    text-decoration: none;  
-    transition: background 0.2s;
-}
-.configButton:hover {
-    background: var(--background-color-hover);
-    border: 1.5px solid var(--border-color);
-    padding: 25px;
+    --switch-filter: url(./assets/image/index/moon.svg);
 }
 footer {
     display: flex;
@@ -69,7 +38,7 @@ footer {
     color: var(--text-color);
     font-size: 16px;
 }
-footer .configButtonFooter {
+footer .btnFooter {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,16 +54,16 @@ footer .configButtonFooter {
     text-decoration: none;  
     transition: background 0.2s;
 }
-footer .configButtonFooter:hover {
+footer .btnFooter:hover {
     background: var(--background-color-hover);
     border: 1.5px solid var(--border-color);
     padding: 10px;
 }
 @media (min-width: 700px) {  
     :root {
-      --bkground: url(./assets/index/blackmood-mobile.jpg)
+      --bkground: url('./assets/image/index/blackmood-mobile.jpg')
     }  
     .light {
-      --bkground: url(./assets/index/lightmood.jpg)
+      --bkground: url('./assets/image/index/lightmood.jpg')
     }
 }

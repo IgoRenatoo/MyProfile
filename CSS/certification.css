@@ -19,10 +19,10 @@
 }
 @media (min-width: 700px) {  
   :root {
-    --bkground: url(./assets/index/blackmood-mobile.jpg)
+    --bkground: url(./assets/image/index/blackmood-mobile.jpg)
   }
   .light {
-    --bkground: url(./assets/index/lightmood.jpg)
+    --bkground: url(./assets/image/index/lightmood.jpg)
   }
   .optionSelect {
     width: 350px;
