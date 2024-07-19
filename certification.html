@@ -17,21 +17,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
 
+  <!-- Fonte PlayWrite -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet:wght@100..400&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="./CSS/global.css" />
   <link rel="stylesheet" href="./CSS/certification.css" />
 </head>
 
 <body>
-  <main class="mainCertification">
+  <main class="main-certification">
     <h1>Meus Certificados</h1>
-    <section class="containerCertification">
-      <select class="optionSelect" id="courseSelect">
-        <optgroup label="Cursos Técnicos">
+    <section>
+      <select class="select-option" id="courseSelect">
+        <optgroup label="Área Industrial">
           <option value="0" selected hidden>Selecione uma opção</option>
           <option value="1">Técnico Mecânica Industrial</option>
           <option value="2">Técnico Edificações</option>
         </optgroup>
-        <optgroup label="Cursos Complementares">
+        <optgroup label="Área Tecnologia">
           <option value="3">Fundamentos da Programação</option>
           <option value="4">Banco de Dados</option>
           <option value="5">Scrum Fundamentos</option>
@@ -39,13 +45,12 @@
           <option value="7">Micro Certification - Welcome ServiceNow</option>
         </optgroup>
       </select>
-      <input onclick="displayCourse()" class="configButton" type="button" value="Exibir" />
+      <input onclick="displayCourse()" class="view-course" type="button" value="Exibir" />
     </section>
-    <div id="displayCertification"></div>
+    <div id="displayCertification"> <!-- Conteúdo do certificado! --> </div>
   </main>
-
   <footer>
-    <a class="configButtonFooter" href="./index.html">Menu Principal</a>
+    <a class="btn-footer" href="./index.html">Menu Principal</a>
   </footer>
 </body>
 <script src="./JS/script.js"></script>

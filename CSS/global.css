@@ -35,7 +35,7 @@ footer {
     color: var(--text-color);
     font-size: 16px;
 }
-footer .btnFooter {
+.btn-footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +47,7 @@ footer .btnFooter {
     text-decoration: none;  
     transition: background 0.2s;
 }
-footer .btnFooter:hover {
+.btn-footer:hover {
     background: var(--background-color-hover);
 }
 @media (max-width: 700px) {  

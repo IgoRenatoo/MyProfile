@@ -1,44 +1,82 @@
-.containerCertification {
+.main-certification {
   display: flex;
+  flex-direction: column;
+  margin: 0 auto;
   padding: 5px;
   gap: 10px;
 }
-.optionSelect {
-  width: 250px;
+.main-certification h1 {
+  text-align: center;
+  font-family: "Playwrite DK Uloopet";
+  letter-spacing: 2px;
+}
+.main-certification section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.select-option {
+  display: flex;
+  gap: 10px;
+  width: 300px;
+  height: 45px;
+  border: 2px solid var(--border-color);
   border-radius: 8px;
   font-size: 16px;
-  color: var(--text-color);
-  background-color: rgb(128, 128, 128, 0.70);  
-  flex-shrink: 2px;
+  background-color: var(--background-color);
+  cursor: pointer;
 }
-.imgCourse {
-    height: 100%;
-    width: 100%;
-    border-radius: 8px;
-    outline: 2px solid var(--text-color);  
+.select-option:hover {
+  background-color: rgba(100, 100, 100, 0.8);
 }
-@media (min-width: 700px) {  
-  :root {
-    --bkground: url(./assets/image/index/blackmood-mobile.jpg)
-  }
-  .light {
-    --bkground: url(./assets/image/index/lightmood.jpg)
-  }
-  .optionSelect {
-    width: 350px;
-  }
-  .configButton {
-      padding: 15px;
-  }
-  .configButton:hover {
-      padding: 15px;
-  }  
+.view-course {
+  font-family: "Playwrite DK Uloopet";
+  width: 80px;
+  height: 35px;
+  padding: 5px;  
+  background: var(--background-color);
+  border: 2px solid var(--border-color);
+  border-radius: 10px;  
 }
-@media (max-width: 700px){
-  .configButton {
-    padding: 10px;
+.view-course:hover {
+  background: var(--background-color-hover);
+}
+.img-course {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 5px;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 20px;
+    background-color: var(--text-color);
+}
+@media (max-width: 415px) {  
+  .select-option {
+    width: 215px;
   }
-  .configButton:hover {
-    padding: 10px;
-  } 
+  .view-course {
+    font-size: 12px;
+    width: 50px;
+  }
+  .btn-footer {
+    padding: 7px;
+  }
+}
+@media (max-width: 280px) {
+  .main-certification h1 {
+    font-size: 25px;
+  }
+  .select-option {
+    width: 100px;
+  }
+  .view-course {
+    font-size: 12px;
+    width: 50px;
+  }
+  .btn-footer {
+    font-size: 12px;
+    padding: 4px;
+  }
 }
