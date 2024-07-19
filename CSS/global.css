@@ -2,14 +2,13 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "Playwrite DK Uloopet",'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: var(--text-color);
 }
-html, body {
+body {
     display: flex;
     flex-direction: column;
-    background: var(--bkground) no-repeat top center/cover;
-    height: 100%;
+    background: var(--bkground) no-repeat center center/200%
 }
 .dark {
     --bkground: url(./assets/image/index/blackmood.jpg);
@@ -20,7 +19,7 @@ html, body {
     --switch-filter: url(./assets/image/index/sun.svg);
 }
 .light {
-    --bkground: url(./assets/image/index/lightmood-mobile.jpg);
+    --bkground: url(./assets/image/index/lightmood.jpg);
     --border-color: black;
     --text-color: black;
     --background-color: rgba(255, 255, 255, 0.10);
@@ -32,38 +31,32 @@ footer {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    height: 100%;
-    position:relative;
     padding: 10px;
     color: var(--text-color);
     font-size: 16px;
 }
 footer .btnFooter {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 10px;
-  
+    justify-content: center;
+    font-family: "Playwrite DK Uloopet";
+    padding: 10px;  
     background: var(--background-color);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-  
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-  
+    border: 2px solid var(--border-color);
+    border-radius: 10px;  
     text-decoration: none;  
     transition: background 0.2s;
 }
 footer .btnFooter:hover {
     background: var(--background-color-hover);
-    border: 1.5px solid var(--border-color);
-    padding: 10px;
 }
-@media (min-width: 700px) {  
-    :root {
-      --bkground: url('./assets/image/index/blackmood-mobile.jpg')
-    }  
-    .light {
-      --bkground: url('./assets/image/index/lightmood.jpg')
-    }
+@media (max-width: 700px) {  
+    body {
+      background-size: 700%
+  }
 }
+@media (max-width: 350px) {  
+    body {
+      background-size: 4000%
+  }
+}  
