@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatibility" content="IE-edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile - Igor Oliveira</title>
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Fonte Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Fonte PlayWrite -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet:wght@100..400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/CSS/global.css" />
+  <link rel="stylesheet" href="./assets/CSS/projetos.css" />
+</head>
+<body>    
+  <main class="main-projetos">
+    <h1>Meus Projetos Realizados</h1>
+    <section class="theme-mode">
+      <div class="switcher" id="switcher" onclick="toggleMode()">
+        <span> <!-- 'Slide moswitchod' --> </span>
+        <button onclick="toggleClick()"></button>
+      </div>
+    </section>
+
+    <section class="projeto">
+      <img src="./assets/imagens/projetos/landing-page.jpg" alt="Landing Page Project" />
+      <div class="projeto-info">
+        <h2>Criando Landing Page com HTML e CSS</h2>
+        <p>Este projeto prático foi desenvolvido para auxiliar desenvolvedores a compreender e aplicar conceitos de CSS abordados durante a imersão da Digital Innovation One. O objetivo é que você recrie o projeto original em seu próprio repositório, ampliando assim o seu portfólio no GitHub.</p>
+        <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, Flexbox, Grid</p>
+        <p><strong>Status:</strong> Concluído ✔️</p>
+        <p><strong>Colaboração:</strong> <a target="_blank" href="https://github.com/emilycordeiro0">@Emily Cordeiro</a> </p>
+        <p><strong>Tipo de Projeto:</strong> Front-end</p>
+        <a href="https://igorenatoo.github.io/CSS-DIO-ProjectsCourseCSS/HTCS-DIO-LandingPage/index.html" target="_blank" class="projeto-link">Ver Projeto</a>
+      </div>
+    </section>
+
+    <section class="projeto">
+      <img src="./assets/imagens/projetos/clone-discord.jpg" alt="Discord Layout Project" />
+      <div class="projeto-info">
+        <h2>Construindo um Layout Responsivo Para o Site do Discord Com CSS</h2>
+        <p>Este projeto tem como objetivo construir um layout responsivo inspirado no site do Discord, utilizando HTML e CSS. Através da aplicação de técnicas de design responsivo, o projeto se adapta a diferentes tamanhos de tela, proporcionando uma melhor experiência ao usuário.</p>
+        <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS Flexbox, CSS Grid</p>
+        <p><strong>Status:</strong> Concluído ✔️</p>
+        <p><strong>Colaboração:</strong> Not found</p>
+        <p><strong>Tipo de Projeto:</strong> Front-end</p>
+        <a href="https://igorenatoo.github.io/CSS-DIO-ProjectsCourseCSS/HTCS-DIO-CloneDiscord/index.html" target="_blank" class="projeto-link">Ver Projeto</a>
+      </div>
+    </section>
+
+    <section class="projeto">
+      <img src="./assets/imagens/projetos/pokedex-application.jpg" alt="Pokedex Project" />
+      <div class="projeto-info">
+        <h2>Consumo da API Pokemon</h2>
+        <p>A PokeDex é uma aplicação que permite aos usuários visualizar informações sobre diversos Pokémon, incluindo nome, tipo, altura e peso. O objetivo desse projeto foi realizar o consumo da API Pokemon.</p>
+        <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript, Consumo da API Pokémon</p>
+        <p><strong>Status:</strong> Concluído ✔️</p>
+        <p><strong>Colaboração:</strong> Not found</p>
+        <p><strong>Tipo de Projeto:</strong> FullStack</p>
+        <a href="https://igorenatoo.github.io/JS-API-PokeDexApplication/" target="_blank" class="projeto-link">Ver Projeto</a>
+      </div>
+    </section>
+    
+    <section class="projeto">
+      <img src="./assets/imagens/projetos/dio-bank-application.jpg" alt="DioBank Project" />
+      <div class="projeto-info">
+        <h2>DioBank - Sistema Bancário Simples</h2>
+        <p>O DioBank é um sistema bancário simples que simula operações básicas de um banco digital, como login, consulta de saldo, dívida, crédito e reputação. O sistema armazena as informações localmente utilizando o localStorage, oferecendo uma experiência completa e interativa em um ambiente simulado.</p>
+        <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, TypeScript, React, Styled Components</p>
+        <p><strong>Status:</strong> Concluído ✔️</p>
+        <p><strong>Colaboração:</strong> Not found</p>        
+        <p><strong>Tipo de Projeto:</strong> FullStack</p>
+        <a href="https://igorenatoo.github.io/TS-DIO-ProjectsCourseTypescript/" target="_blank" class="projeto-link">Ver Projeto</a>
+      </div>
+    </section>
+
+    <section class="projeto">
+      <img src="./assets/imagens/projetos/mario-kart.jpg" />
+      <div class="projeto-info">
+        <h2>Projeto: Mario KartJS</h2>
+        <p>Este projeto visa criar uma lógica de um jogo de vídeo game para simular corridas de Mario Kart, levando em consideração as regras e mecânicas da série de jogos desenvolvida e publicada pela Nintendo. O objetivo é implementar uma competição divertida entre personagens icônicos, utilizando JavaScript e conceitos de programação.</p>
+        <p><strong>Tecnologias Utilizadas:</strong> JavaScript, Node.js</p>
+        <p><strong>Status:</strong> Concluído ✔️</p>
+        <p><strong>Colaboração:</strong> Not found</p>
+        <p><strong>Tipo de Projeto:</strong> Back-end</p>
+        <a href="https://igorenatoo.github.io/NodeJs-DIO-ProjectsCourseNodeJs/01-MarioKart/index.html" target="_blank" class="projeto-link">Ver Projeto</a>
+      </div>
+    </section>
+
+    <section class="projeto">
+      <img src="./assets/imagens/projetos/car-shopee.jpg" alt="Carrinho de Compras" />
+      <div class="projeto-info">
+        <h2>Projeto: Carrinho de Compras</h2>
+        <p>Este projeto é uma aplicação de carrinho de compras que permite adicionar, calcular, remover e deletar itens de maneira simples e eficiente. O objetivo é demonstrar a manipulação de um carrinho de compras, utilizando funções em JavaScript e operações assíncronas. O projeto pode ser expandido para incluir novas funcionalidades e servir como base para um sistema de e-commerce.</p>
+        <p><strong>Tecnologias Utilizadas:</strong> JavaScript, Node.js, Express.js</p>
+        <p><strong>Status:</strong> Concluído ✔️</p>
+        <p><strong>Colaboração:</strong> Not found</p>
+        <p><strong>Tipo de Projeto:</strong> Back-end</p>
+        <a href="https://github.com/IgoRenatoo/NodeJs-DIO-ProjectsCourseNodeJs/tree/main/02-Shopee" target="_blank" class="projeto-link">Ver Projeto</a>
+      </div>
+    </section>
+
+    <section class="projeto">
+      <img src="./assets/imagens/projetos/qr-code.png" alt="Gerador de QR Code e Barcode" />
+      <div class="projeto-info">
+        <h2>Projeto: QRCode e Barcode</h2>
+        <p>Este projeto tem como objetivo criar uma aplicação para gerar códigos QR e códigos de barras a partir da linha de comando. A aplicação permite ao usuário selecionar o tipo de código que deseja gerar e utiliza bibliotecas específicas para processar a solicitação e gerar o código correspondente.</p>
+        <p><strong>Tecnologias Utilizadas:</strong> Node.js, prompt</p>
+        <p><strong>Status:</strong> Concluído ✔️</p>
+        <p><strong>Colaboração:</strong> Not found</p>
+        <p><strong>Tipo de Projeto:</strong> Back-end</p>
+        <a href="https://github.com/IgoRenatoo/NodeJs-DIO-ProjectsCourseNodeJs/tree/main/03-GeradorQRCode" target="_blank" class="projeto-link">Ver Projeto</a>
+      </div>
+    </section>
+
+    <section class="projeto">
+      <img src="./assets/imagens/projetos/podcast.jpg" alt="Gerenciador de Episódios" />
+      <div class="projeto-info">
+        <h2>Projeto: Gerenciador de Podcast's</h2>
+        <p>Este projeto é uma simulação de um servidor HTTP simples, que gerencia e exibe dados relacionados a episódios de uma série fictícia. Ele permite que os usuários listem, ordenem e filtrem episódios com base em diversos critérios, utilizando rotas HTTP, controladores e manipulação de requisições.</p>
+        <p><strong>Tecnologias Utilizadas:</strong> Node.js, TypeScript, Dotenv</p>
+        <p><strong>Status:</strong> Concluído ✔️</p>
+        <p><strong>Colaboração:</strong> Not found</p>
+        <p><strong>Tipo de Projeto:</strong> Back-end</p>
+        <a href="https://github.com/IgoRenatoo/NodeJs-DIO-ProjectsCourseNodeJs/tree/main/04-APIRestGerenciadorPodcasts" target="_blank" class="projeto-link">Ver Projeto</a>
+      </div>
+    </section>
+
+    <section class="projeto">
+      <img src="./assets/imagens/projetos/f1.jpg" alt="Desenvolvimento APIRest Formula 1" />
+      <div class="projeto-info">
+        <h2>Projeto: Desenvolvimento API-Rest Formula 1</h2>
+        <p>Este projeto simula o ambiente de uma corrida de Fórmula 1, com foco na criação de uma API REST utilizando Node.js, Fastify e TypeScript. O principal objetivo é fornecer uma interface para a consulta de informações sobre pilotos e equipes, além de determinar o melhor piloto com base em critérios como aceleração e número de títulos.</p>
+        <p><strong>Tecnologias Utilizadas:</strong> Node.js, Fastify, TypeScript</p>
+        <p><strong>Status:</strong> Concluído ✔️</p>
+        <p><strong>Colaboração:</strong> Not found</p>
+        <p><strong>Tipo de Projeto:</strong> Back-end</p>
+        <a href="https://github.com/IgoRenatoo/NodeJs-DIO-ProjectsCourseNodeJs/tree/main/05-APIRestFormula1" target="_blank" class="projeto-link">Ver Projeto</a>
+      </div>
+    </section>
+
+    <section class="projeto">
+      <img src="./assets/imagens/projetos/champions.jpg" alt="Champions League" />
+      <div class="projeto-info">
+        <h2>Projeto: Champions League</h2>
+        <p>Este projeto é uma aplicação back-end para gerenciamento de jogadores e clubes de uma liga de futebol, utilizando o framework Express. Ele inclui funcionalidades de CRUD para jogadores, com endpoints para criar, atualizar, deletar e listar jogadores e clubes. O objetivo é simular um sistema simples de controle de dados de uma liga de futebol.</p>
+        <p><strong>Tecnologias Utilizadas:</strong> Node.js, Express, TypeScript</p>
+        <p><strong>Status:</strong> Em Desenvolvimento! ❌</p>
+        <p><strong>Colaboração:</strong> Not found</p>
+        <p><strong>Tipo de Projeto:</strong> Back-end</p>
+        <a href="https://github.com/IgoRenatoo/NodeJs-DIO-ProjectsCourseNodeJs/tree/main/06-APIRestChampionsLeague" target="_blank" class="projeto-link">Ver Projeto</a>
+      </div>
+    </section>
+
+  </main>
+  <footer style="gap: 10px;">
+    <a class="btn-footer" href="./index.html">Menu</a>
+    <p>&copy; 2023 Igor Oliveira. Todos os direitos reservados.</p>
+  </footer>
+</body>
+
+<script src="./Back-End/script.js"></script>
+
+</html>
