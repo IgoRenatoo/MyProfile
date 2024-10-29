@@ -1,0 +1,80 @@
+.main-certificados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.main-certificados section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.select-option {
+  max-width: 350px;
+  height: 45px;
+  margin: 20px 0px;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: var(--background-color); 
+  color: var(--text-color);
+  padding: 5px;
+  transition: background-color 0.3s;
+  box-shadow: 0px 2px 6px var(--smoke);
+}
+
+.view-course {
+  font-family: "Playwrite DK Uloopet";
+  width: 80px;
+  height: 45px;
+  padding: 5px;  
+  background: var(--background-color);
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0px 2px 6px var(--smoke);
+}
+.view-course:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.img-certificados {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2px;
+  width: 100%;
+  max-width: 100vh;
+  border-radius: 10px;
+  background-color: var(--border-color);
+  box-shadow: 0px 2px 6px var(--smoke);
+}
+
+/* Responsividade */
+@media (max-width: 415px) {  
+  .select-option {
+      width: 90%;
+  }
+  .view-course {
+      font-size: 14px;
+      width: 70px;
+  }
+}
+
+@media (max-width: 280px) {
+  .main-certificados h1 {
+      font-size: 1.5em;
+  }
+  .select-option {
+      width: 80%;
+  }
+  .view-course {
+      font-size: 12px;
+      width: 60px;
+  }
+}
