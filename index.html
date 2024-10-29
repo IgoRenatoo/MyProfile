@@ -24,26 +24,30 @@
     rel="stylesheet">
 
   <!-- Style CSS -->
-  <link rel="stylesheet" href="./CSS/global.css" />
-  <link rel="stylesheet" href="./CSS/index.css" />
+  <link rel="stylesheet" href="./assets/CSS/global.css" />
+  <link rel="stylesheet" href="./assets/CSS/index.css" />
 </head>
 
 <body>
-  <main class="mainIndex">
-    <section class="profile">
-      <img src="./CSS/assets/image/index/Avatar-IO.png" alt="IgorImg" />
-      <span>Igor Oliveira Dev</span>
+  <section class="switcher" id="switcher" onclick="toggleMode()">   
+    <span> <!-- 'Slide moswitchod' --> </span>
+    <button onclick="toggleClick()"></button>   
+  </section>
 
-      <div class="switchMode" id="switch" onclick="toggleMode()">
-        <span> <!-- 'Slide mood' --> </span>
-        <button onclick="toggleClick()"></button>
-      </div>
+  <main class="main-index">
+    <section class="profile">
+      <img src="./assets/imagens/index/Avatar-IO.png" alt="IgorImg" />
+      <span>Igor Oliveira Dev</span>
+    </section>
+
+    <section class="profile-links">
       <ul>
-        <li> <a href="./who-am.html">Quem sou Eu</a> </li>
-        <li> <a href="./certification.html">Certificados e Treinamentos</a> </li>
-        <li> <a href="./project.html">Meus Projetos</a> </li>
+        <li> <a href="./quem-sou.html">Quem sou Eu</a> </li>
+        <li> <a href="./certificados.html">Certificados e Treinamentos</a> </li>
+        <li> <a href="./projetos.html">Meus Projetos</a> </li>
       </ul>
     </section>
+    
     <section class="social-links">
       <a href="https://github.com/IgoRenatoo" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
       <a href="https://www.linkedin.com/in/IgoRenatoo/" target="_blank"><ion-icon
@@ -54,7 +58,8 @@
     </section>
   </main>
 </body>
-<script src="./JS/script.js"></script>
+
+<script src="./Back-End/script.js"></script>
 <!-- Script para carregar Ionicons, usados na sessão 'Social Links'  -->
 <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 

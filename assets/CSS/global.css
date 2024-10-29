@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--bkground) no-repeat center center;
+    background-size: cover; /* Faz o fundo cobrir toda a tela */
+}
+.dark {
+    --bkground: url(../imagens/index/blackmood.jpg); 
+    --border-color: white;
+    --text-color: rgba(0, 255, 255, 0.908);
+    --background-color: rgba(0, 0, 0, 0.6);
+    --background-color-hover: rgba(60, 60, 60, 0.70);
+    --switch-filter: url(../imagens/index/sun.svg);
+    --smoke: rgba(255, 255, 255, 0.6)
+}
+.light {
+    --bkground: url(../imagens/index/lightmood.jpg);
+    --border-color: black;
+    --text-color: black;
+    --background-color: rgba(255, 255, 255, 0.10);
+    --background-color-hover: rgb(128, 128, 128, 0.70);
+    --switch-filter: url(../imagens/index/moon.svg);
+    --smoke: rgba(0, 255, 255, 0.908)
+}
+h1 {
+    text-align: center;
+    font-family: "Playwrite DK Uloopet";
+    letter-spacing: 2px;
+    font-size: 2em; /* Aumenta o tamanho da fonte */
+}
+
+.switcher {
+    width: 64px;
+    height: 24px;
+    position: fixed; /* Faz o switcher ficar fixo na tela */
+    top: 10px; /* Distância do topo da tela */
+    right: 10px; /* Distância da borda direita da tela */
+    z-index: 1000; /* Garante que o switcher fique acima de outros elementos */
+}
+.switcher span {
+    display: block;
+    width: 100%;
+    height: 24px;
+    background-color: var(--background-color);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;    
+    box-shadow: 0px 2px 6px var(--smoke);
+}
+.switcher button {
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-filter) no-repeat center;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    transform: translateY(-90%); /* Ajusta o posicionamento do botão em cima do span */
+    transition: transform 0.2s; /* Transição suave para animação */
+    animation: slide-back 1s;
+}
+.switcher button:hover {
+    outline: 4px solid var(--background-color-hover);
+}
+.light .switcher button { 
+    animation: slide-in 1s forwards;
+}
+@keyframes slide-in {
+    from { left: 0; }
+    to { left: 50%; }
+}
+@keyframes slide-back {
+    from { left: 50%; }
+    to { left: 0; }
+}
+
+.btn-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Playwrite DK Uloopet";
+    font-size: 12px; 
+    background: var(--background-color);
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    text-decoration: none;  
+    transition: background 0.2s;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 4px 8px var(--smoke);
+}
+.btn-footer:hover {
+    background: var(--background-color-hover);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    color: var(--text-color);
+    font-size: 16px;
+}
